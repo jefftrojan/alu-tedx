@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TedxALU</title>
+        <link rel="icon" sizes="192x192" href="https://static.wixstatic.com/media/dcade1_76b26412e76e40aab7b4918bc16e61e5%7Emv2.png">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="styles.css" />
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+        
+</head>
+
+<body>
+    <!---NAVIGATION BAR-->
+        <div class="navigation">
+                <div class="navigation-container">
+                        <div class="navigation-bar">
+                                <div class="logo-toggle-container">
+                                        <a href="#">
+                                                <img src="./images/logo/navlogo.png" alt="">
+                                        </a>
+                                        <span class="toggle-box">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                        </span>
+                                </div>
+                                <ul class="menu">
+                                  <li><a href="#">Home</a></li>
+                                  <li><a href="#about">About</a></li>
+                                  <li><a href="#speaker-id">Speakers</a></li>
+                                  <li>
+                                  <div class="dropdown">
+                                      <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Previous events
+                                      </button>
+                                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                   
+                                        <a class="dropdown-item" style="color:white;" href="./event-details/event2016.html">ALC 2016</a>
+                                        <a class="dropdown-item" style="color:white;" href="./event-details/event2019.html">ALU 2019</a>
+
+                                       
+                                        
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li><a href="#contact">Contact</a></li>
+                                  <li style="background-color: red;  padding:0;"
+                                          class="hoverable"><a href="#stream"> Go to stream</a>
+                                  </li>
+                          </ul>
+                        </div>
+                </div>
+        </div>
+    
+
+       <!--THEME SECTION-->
+
+       
+       <section class="main-theme">
+        <div class="theme-div">
+            <div class="theme-heading">
+                <h1 class="theme">What if?</h1>
+                <p> 3rd June 2023</p>
+                <a class="ticket-btn" href="#stream"> Watch stream</a>
+            </div>
+            <canvas id="waves"></canvas>
+        </div>
+    </section>
+
+
+        <!---ABOUT SECTION-->
+        <div class="row" id="about" data-scroll-section="">
+            <div class="card col-sm-12 col-md-12">
+              <div class="section-heading"><span class="about-span">ABOUT</span></div>
+              <div class="card-header">
+                <ul class="unordlist nav nav-tabs card-header-tabs">
+                  <li class="nav-item">
+                    <button id="ted" class="nav-link active" >TED</a>
+                  </li>
+                  <li class="nav-item">
+                    <button id="tedx" class="nav-link">TED<sup class="super">x</sup></button>
+                  </li>
+                  <li class="nav-item">
+                    <button id="TedxALU" class="nav-link">TED<sup class="super">x</sup> ALU</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade in active show">
+                    <p id="text" class="para-tab sizePara">
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- SPEAKER SECTION-->
+        <section class="speaker-section" id="speaker-id">
+            <p class="section-heading">SPEAKERS</p>
+        
+            <div class="speakers">
+        
+            
+            <div class="speaker">
+                <div class="filter-1">
+                    <div class="speaker-image">
+                       <img src="./images/2023/speaker1.jpg"/>
+                    </div>
+                </div>
+                <div class="speaker-info">
+                    <p class="speaker-name">Emma Theofelus</p>
+                    <div class="small-info">
+                        <p class="speaker-desc">Deputy Minister of ICT, Namibia
+</p>
+                        <a href="./event-details/speaker.html" class="more-button">More &rarr;</a>
+                    </div> 
+                
+                </div>
+             </div>
+        
+             <div class="speaker speaker-2">
+                
+                <div class="speaker-info">
+                    <p class="speaker-name">Sue Snyman</p>
+                    <div class="small-info">
+                        <p class="speaker-desc">Director of Research, ALU School of Wildlife Conservation</p>
+                        <a href="./event-details/speaker.html" class="more-button">More &rarr;</a>
+                    </div> 
+                </div>
+        
+                <div class="filter-2">
+                    <div class="speaker-image">
+                       <img src="./images/2023/speaker2.jpeg"/>
+                    </div>
+                </div>
+             </div>
+        
+             <div class="speaker">
+                <div class="filter-1">
+                    <div class="speaker-image">
+                       <img src="./images/2023/speaker3.jpg"/>
+                    </div>
+                </div>
+                <div class="speaker-info">
+                    <p class="speaker-name">Femi Reis</p>
+                    <div class="small-info">
+                        <p class="speaker-desc">Cybersecurity Researcher
+</p>
+                        <a href="./event-details/speaker.html" class="more-button">More &rarr;</a>
+                    </div> 
+                
+                </div>
+             </div>
+        
+             <div class="speaker speaker-2">
+                
+                <div class="speaker-info">
+                    <p class="speaker-name">Lauren Nkuranga</p>
+                    <div class="small-info">
+                        <p class="speaker-desc">Entrepreneur, Investment Expert
+p>
+                        <a href="./event-details/speaker.html" class="more-button">More &rarr;</a>
+                    </div> 
+                </div>
+        
+                <div class="filter-2">
+                    <div class="speaker-image">
+                       <img src="./images/2023/speaker4.jpeg"/>
+                    </div>
+                </div>
+             </div>
+        
+             <div class="speaker">
+                <div class="filter-1">
+                    <div class="speaker-image">
+                       <img src="./images/2023/speaker5.jpeg"/>
+                    </div>
+                </div>
+                <div class="speaker-info">
+                    <p class="speaker-name">Kanamugire Bicura Junior, MBA </p>
+                    <div class="small-info">
+                        <p class="speaker-desc">Dealflow Manager, Katapult VC.</p>
+                        <a href="./event-details/speaker.html" class="more-button">More &rarr;</a>
+                    </div> 
+                
+                </div>
+             </div>
+
+             <div class="speaker speaker-2">
+                
+              <div class="speaker-info">
+                  <p class="speaker-name">Arun S.</p>
+                  <div class="small-info">
+                      <p class="speaker-desc"> Co-founder Hence Technologies</p>
+                      <a href="./event-details/speaker.html" class="more-button">More &rarr;</a>
+                  </div> 
+              </div>
+      
+              <div class="filter-2">
+                  <div class="speaker-image">
+                     <img src="./images/2023/speaker6.jpeg"/>
+                  </div>
+              </div>
+           </div>
+        
+            </div>
+           </section>
+
+        <!--- SPONSORSHIP SECTION  
+        <section class="sponsors">
+        <div class="sponsors-row">
+            <div class="title-sponsor comp">
+              <div class="header">
+                <h1 class="heading title-caption">
+                  <span class="title">Title</span> Sponsor
+                </h1>
+              </div>
+              <img class="title-img img" src="./images/logo/tedx-logo.png" alt="Title-Sponsor" />
+              <h3>Lorem ipsum dolor</h3>
+            </div>
+      
+            <div class="gold-sponsor comp">
+              <div class="header">
+                <h1 class="heading gold-caption">
+                  <span class="gold">Gold</span> Sponsor
+                </h1>
+              </div>
+              <img class="gold-img img" src="./images/logo/tedx-logo.png" alt="Gold-Sponsor" />
+              <h3>Lorem ipsum dolor</h3>
+            </div>
+      
+            <div class="silver-sponsor comp">
+              <div class="header">
+                <h1 class="heading silver-caption">
+                  <span class="silver">Silver</span> Sponsor
+                </h1>
+              </div>
+              <img
+                class="silver-img img"
+                src="./images/logo/tedx-logo.png"
+                alt="Silver-Sponsor"
+              />
+              <h3>Lorem ipsum dolor</h3>
+            </div>
+      
+            <div class="comp">
+              <div class="header">
+                <h1 class="heading other-caption">
+                  <span class="other">Other</span> Sponsors
+                </h1>
+              </div>
+              <div class="img-list">
+                <div class="series-img">
+                  <img
+                    class="other-img img"
+                    src="./images/logo/tedx-logo.png"
+                    alt="Other-Sponsor"
+                  />
+                  <h3 class="other-info">Lorem epsum</h3>
+                </div>
+                <div class="series-img">
+                  <img
+                    class="other-img img"
+                    src="./images/logo/tedx-logo.png"
+                    alt="Other-Sponsor"
+                  />
+                  <h3 class="other-info">Lorem epsum</h3>
+                </div>
+                <div class="series-img">
+                  <img
+                    class="other-img img"
+                    src="./images/logo/tedx-logo.png"
+                    alt="Other-Sponsor"
+                  />
+                  <h3 class="other-info">Lorem epsum</h3>
+                </div>
+                <div class="series-img">
+                  <img
+                    class="other-img img"
+                    src="./images/logo/tedx-logo.png"
+                    alt="Other-Sponsor"
+                  />
+                  <h3 class="other-info">Lorem epsum</h3>
+                </div>
+                <div class="series-img">
+                  <img
+                    class="other-img img"
+                    src="./images/logo/tedx-logo.png"
+                    alt="Other-Sponsor"
+                  />
+                  <h3 class="other-info">Lorem epsum</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+         SCHEDULE SECTION
+        <section class="schedule">
+        <p class="section-heading">SCHEDULE</p>
+        <div class="timeline">
+          <div class="schedule-container left">
+                  <div class="content">
+                          <h2>2017</h2>
+                          <p>Lorem ipsum..</p>
+                  </div>
+          </div>
+          <div class="schedule-container right">
+                  <div class="content">
+                          <h2>2016</h2>
+                          <p>Lorem ipsum..</p>
+                  </div>
+          </div>
+          <div class="schedule-container left">
+                  <div class="content">
+                          <h2>2016</h2>
+                          <p>Lorem ipsum..</p>
+                  </div>
+          </div>
+          <div class="schedule-container right">
+                  <div class="content">
+                          <h2>2016</h2>
+                          <p>Lorem ipsum..</p>
+                  </div>
+          </div>
+          <div class="schedule-container left">
+                  <div class="content">
+                          <h2>2016</h2>
+                          <p>Lorem ipsum..</p>
+                  </div>
+          </div>
+          <div class="schedule-container right">
+                  <div class="content">
+                          <h2>2016</h2>
+                          <p>Lorem ipsum..</p>
+                  </div>
+          </div>
+  </div>
+</section>- -->
+        <!-- FOOTER SECTION-->
+        <footer class="mainfooter" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-4 col-12">
+                        <div class="footer_box">
+                            <div class="footer_header">
+                                <div class="footer_logo">
+                                    <img src="./images/logo/logo.png" alt="evento" id="tedxlogo">
+                                </div>
+                            </div>
+                            <div class="footer_box_body">
+                                <p class="desc">
+                                    
+Driven by the aspiration to provide the student community with cutting-edge and captivating concepts
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="footer_box">
+                            <div class="footer_header">
+                                <h4 class="footer_title">
+                                    Spread the IDEAS
+                                </h4>
+                            </div>
+                            <div class="footer_box_body">
+                                <p class="desc">
+                                    We're on social media networks! Follow us on:
+                                </p>
+                                <ul class="footer_social">
+                                    <li class="social_class">
+                                        <a href="https://www.linkedin.com/company/tedx-alurwanda">
+                                            <i class="ion-social-linkedin">
+                                            </i></a>
+                                    </li>
+                                    <li class="social_class">
+                                        <a href="https://www.instagram.com/Tedx.ALURWANDA/?hl=en">
+                                            <i class="ion-social-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="footer_box">
+                            
+                            <div class="google-map">
+                               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15950.213966504105!2d30.1529176!3d-1.9306311!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca77688d3131f%3A0x3a65f6d29a33c0d3!2sAfrican%20Leadership%20University!5e0!3m2!1sen!2srw!4v1685830413605!5m2!1sen!2srw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                            <div class="footer_box_body">
+                                <p class="desc">
+                                    Bumbogo, Kigali Innovation City, Next to Azam, Kigali, Rwanda
+Phone: +250 784 650 219
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright_footer">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-12">
+                        <p>
+                            Copyright &copy;
+                            2023
+                            All rights reserved
+                             |
+                            Made with <i class="ion-heart" aria-hidden="true"></i> by TedxALU |
+                            This independent TEDx event is operated under license from <a href="https://www.ted.com" target="_blank" class="alink">TED</a>.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6 ">
+                        <p style="text-align: right;">
+                            <a href="#" onclick="backtotop()" class="alink">Back to Top <i class="ion-arrow-up-c" aria-hidden="true"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+        <link href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" rel="stylesheet">
+        
+        <script src="index.js"></script>
+        <!-- bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript">
+                $(document).ready(function () {
+                        $(".navigation .navigation-bar .logo-toggle-container .toggle-box").click(function () {
+                                $(".navigation .menu").stop().slideToggle();
+                        })
+                })
+        </script>
+
+        
+</body>
+
+</html>

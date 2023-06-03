@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap');
+
+@font-face {
+    font-family: 'studio_neonregular';
+    src: url('../fonts/studioneon-webfont.woff2') format('woff2'),
+         url('../fonts/studioneon-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+        margin: 0;
+        padding: 0;
+}
+
+body {
+        background-color: black;
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        overflow-x: hidden;
+}
+
+/* NAVIGATION BAR STYLES */
+
+
+.navigation {
+    background-color: black;
+}
+
+.navigation>.navigation-container {
+    max-width: 90%;
+    margin: auto;
+}
+
+.navigation .navigation-bar {
+    position: relative;
+}
+
+.navigation .navigation-bar .logo-toggle-container {
+    position: absolute;
+    left: 48%;
+    top: .5rem;
+    transform: translateX(-50%);
+}
+
+.navigation .navigation-bar .logo-toggle-container a {
+    display: block;
+    
+}
+
+.navigation .navigation-bar .logo-toggle-container a img {
+    width: 21rem;
+}
+
+.navigation .menu {
+    text-align: right;
+}
+
+
+
+@media screen and (min-width:1024px) {
+    .navigation .menu {
+            display: block !important;
+            height: auto !important;
+    }
+
+}
+
+.navigation .menu li {
+    display: inline-block;
+    padding: 1.3rem 1rem;
+}
+
+.navigation .menu li a {
+    display: block;
+    padding: .8rem 1rem;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.15rem;
+}
+
+.dropdown-toggle{
+    padding: .8rem 1rem;
+
+}
+
+.navigation .menu li:nth-child(1),
+.navigation .menu li:nth-child(2),
+.navigation .menu li:nth-child(3) {
+    float: left;
+}
+
+.navigation .menu li:hover a {
+    color: red;
+}
+
+
+
+.dropdown-menu{
+    background-color: black;
+}
+
+.dropdown-toggle{
+    background-color: black;
+    color:white;
+    border:0;
+    outline:0;
+    font-size: 1.15rem;
+    cursor: pointer;
+}
+.dropdown-item:hover{
+    background-color: red;
+}
+
+.show {
+    display: block;
+}
+
+.navigation .menu .hoverable:hover a {
+    color: black;
+}
+
+@media screen and (max-width:1000px) {
+    .navigation .navigation-bar .logo-toggle-container {
+            position: static;
+            transform: translateX(0%);
+    }
+
+    .navigation .navigation-bar .logo-toggle-container {
+            top: 1.5rem;
+            width: 80%;
+    }
+
+    .navigation .navigation-bar .logo-toggle-container .toggle-box {
+            position: absolute;
+            right: -5rem;
+            top: 1rem;
+            display: block;
+            width: 3rem;
+            background: red;
+            padding: 1.5rem .9rem;
+            cursor: pointer;
+            border-radius: .5rem;
+    }
+
+    .navigation .navigation-bar .logo-toggle-container .toggle-box span {
+            display: block;
+            max-width: 90%;
+            margin: auto;
+            height: .5rem;
+            background-color: white;
+            margin-bottom: .4rem;
+    }
+
+    .navigation .navigation-bar .logo-toggle-container .toggle-box span:last-child {
+            margin-bottom: 0;
+    }
+
+    .navigation .menu {
+            text-align: center;
+            display: none;
+    }
+
+    .navigation .menu li {
+            display: block;
+            float: none !important;
+            padding: 0 1rem;
+            border-bottom: .1rem solid #ccc;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .navigation .navigation-bar .logo-toggle-container {
+            position: static;
+            transform: translateX(0%);
+    }
+
+    
+    .navigation .menu li a{
+        font-size: 1.5rem;
+    }
+
+    .dropdown-toggle{
+        font-size: 1.5rem;
+    }
+
+    .dropdown-item{
+        text-align: center;
+    }
+
+    .navigation .navigation-bar .logo-toggle-container {
+            top: 1.5rem;
+            width: 80%;
+    }
+
+    .navigation .navigation-bar .logo-toggle-container a img {
+            width: 20rem;
+    }
+
+    .navigation .navigation-bar .logo-toggle-container .toggle-box {
+            position: absolute;
+            right: -5rem;
+            top: 1rem;
+            display: block;
+            width: 4rem;
+            background: red;
+            padding: 1rem .9rem;
+            cursor: pointer;
+            border-radius: .5rem;
+    }
+
+    .navigation .navigation-bar .logo-toggle-container .toggle-box span {
+            display: block;
+            max-width: 100%;
+            margin: auto;
+            height: 0.2rem;
+            background-color: white;
+            margin-bottom: .4rem;
+    }
+
+    .navigation .navigation-bar .logo-toggle-container .toggle-box span:last-child {
+            margin-bottom: 0;
+    }
+}
+
+
+/* theme section */
+canvas{
+    height:30vh;
+    width:100%;
+}
+
+.main-theme{
+    position:relative;
+}
+
+.theme-heading{
+    position: absolute;
+    top:0;
+    height: 30vh;
+    width:100%;
+    padding:3rem;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.25), rgba(0,0,0,1), rgba(0,0,0,0.25), rgba(0,0,0,0));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.theme{
+    font-size: 4rem;
+    font-family: "studio_neonregular";
+    color:white;
+    font-weight: 400;
+    text-align: center;
+    margin:0;
+    padding: 0;
+}
+
+.theme-heading p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 2rem 0 2rem;
+}
+
+.ticket-btn{
+    padding:1rem;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color:white;
+    background-color: red;
+}
+
+.ticket-btn:hover{
+    text-decoration: none;
+    scale: 1.05;
+    color:white;
+}
+
+@media (max-width:1000px) {
+    canvas{
+        height:100vh;
+    }
+    .theme-heading{
+        height: 100vh;
+    }
+    .theme{
+        font-size: 4rem;
+    }
+}
+
+@media (max-width:700px) {
+    canvas{
+        height:60vh;
+    }
+    .theme-heading{
+        height: 60vh;
+    }
+    .theme{
+        font-size: 4rem;
+    }
+}
+
+@media (max-width:420px) {
+    canvas{
+        height:30vh;
+    }
+    .theme-heading{
+        height: 30vh;
+    }
+    .theme{
+        font-size: 3rem;
+    }
+}
+
+/* Event DETAILS*/
+.event-details{
+    width:70vw;
+    color:white;
+    font-size:1.5rem;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* SPEAKER1 SECTION */
+
+.section-heading{
+    color:red;
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    text-align: center;
+    font-family: "studio_neonregular";
+    padding-bottom:1rem;
+    width:auto;
+    border-bottom: 2.5px solid #DDCB93;
+}
+
+.speaker-section1{
+    margin-top:5rem;
+    width:80vw;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.speakers1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin:1rem 2rem 2rem;
+}
+
+.speaker1{
+    display: flex;
+    color:white;
+    width:70vw;
+    margin-top:1rem;
+    align-items: center;
+    margin-bottom:2.75rem;
+}
+
+.filter-1_1, .filter-2_1{
+    width: 22rem;
+    height: 24rem;
+    position: relative;
+}
+
+.filter-1_1:after, .filter-2_1:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.55;
+}
+
+.filter-1_1:after{
+    background-image: linear-gradient(to right , rgba(70, 84, 132,1) , rgba(221, 203, 147,0.5) , black)
+}
+
+.filter-2_1:after{
+    background-image: linear-gradient(to left ,black,rgba(70, 84, 132,1) , rgba(221, 203, 147,0.5));
+}
+
+.speaker-image1{
+    width:22rem;
+    height: 24rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.filter-1_1 .speaker-image1{
+    -webkit-mask-image: linear-gradient(to right, white 85%, transparent 100%);
+    mask-image: linear-gradient(to right, white, transparent);
+}
+
+.filter-2_1 .speaker-image1{
+    -webkit-mask-image: linear-gradient(to right, white 85%, transparent 100%);
+    mask-image: linear-gradient(to left, white, transparent);
+}
+
+.speaker-image1 img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position: center;
+}
+
+.speaker-info1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left:10rem;
+}
+
+.speaker-2_1 .speaker-info1{
+    margin-left:0;
+    margin-right:10rem;
+}
+.speaker-name1{
+    font-size:3rem;
+    font-weight: 600;
+    margin-bottom:0.5rem;
+}
+
+.text1{
+    display: flex;
+    align-items: center;
+    margin-top:1.5rem;
+    font-size: 1.2rem;
+}
+svg{
+    width:3rem;
+    margin-left:1rem;
+}
+
+
+@media (max-width:1000px) {
+    html{
+        font-size:80%;
+    }
+}
+
+@media (max-width:600px) {
+    html{
+        font-size:60%;
+    }
+}
+
+@media (max-width:420px) {
+    .speaker1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:80vw;
+        margin-bottom:2rem;
+    }
+    .speaker-info1{
+        margin-top: 1.5rem;
+        align-items: center;
+        margin-left:0;
+        margin-right:0;
+    }
+    .speaker-2_1 .speaker-info1{
+        margin-left:0;
+        margin-right:0;
+    }
+    .small-info1{
+        font-size: 1.5rem;
+        margin-top:0;
+    }
+    .speaker-name1{
+        font-size: 3rem;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    .filter-1_1,.filter-2_1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .speaker-2_1{
+        flex-direction: column-reverse;
+    }
+    .speaker-desc1
+    {
+        text-align: center;
+    }
+    .text1{
+        justify-content: center;
+        text-align: center;
+        font-size:1.3rem;
+    }
+}
+
+    /* FOOTER SECTION */
+    .mainfooter{
+        padding: 2.5rem 0 2.5rem;
+        background-color: #080808;
+        display: block;
+    }
+    #tedxlogo{
+        max-width: 100%;
+        vertical-align: middle;
+        border-style: none;
+        overflow-clip-margin: content-box;
+        overflow: clip;
+    }
+    .desc{
+        font-size: 0.875rem;
+        font-family: "Montserrat", sans-serif;
+        margin: 0 0 0.875rem;
+        line-height: 1.5rem;
+        color: #838383;
+        display: block;
+        margin-block-start: 0.875rem;
+        margin-block-end: 0.875rem;
+    }
+    .footer_title{
+        margin-bottom: 0.875rem;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        line-height: 1.3;
+        display: block;
+    }
+    footer .footer_box h4.footer_title {
+        text-transform: uppercase;
+        padding: 0.5rem 0;
+        font-size: 1.125rem;
+        color: #ffffff;
+    }
+    .footer_social { 
+        padding: 0px
+     }
+     .social_class {
+        display: inline-block;
+        width: auto;
+        list-style: outside none none;
+        margin: 0.125rem 0.625rem 0px 0px;
+     }
+    footer .footer_social li a {
+        border: solid 0.063rem #f50136;
+        display: block;
+        border-radius: 3.125rem;
+        font-size: 1.5rem;
+        color: #f50136;
+        width: 2.5rem;
+        height: 2.5rem;
+        text-align: center;
+    }
+    
+    footer .footer_social {
+        list-style: none;
+    }
+    .google-map {
+        padding-bottom: 50%;
+        position: relative;
+        display:block;
+        
+    }
+    .google-map iframe {
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+    }
+    .copyright_footer {
+        background-color: #000;
+        padding: 0.75rem;
+    }
+    .copyright_footer p {
+        font-size: 0.75rem;
+        font-family: "Montserrat", sans-serif;
+        padding: 0.125rem;
+        color: #ffffff;
+    }
+    .alink {
+        color: inherit;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 0.75rem;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        transition: all 0.4s ease-in-out;
+        touch-action: manipulation;
+        background-color: transparent;
+    }
+    
